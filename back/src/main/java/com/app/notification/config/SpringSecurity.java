@@ -50,7 +50,6 @@ public class SpringSecurity{
 //                .requestMatchers("/addresses/**").permitAll()
 //                .requestMatchers("/customers/**").permitAll()
 //                .requestMatchers("/preferences/**").permitAll()
-                .requestMatchers("/users").hasAuthority(Statics.PRIVILEGED_USER)
                 .anyRequest().authenticated(); // All other requests need to be authenticated
 
         http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class); // Add JWT filter
