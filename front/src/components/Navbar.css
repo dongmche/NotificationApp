@@ -1,0 +1,16 @@
+/* .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .button-container .btn-group {
+    display: flex;
+    gap: 10px; /* Adjust spacing as needed */
+  /* } */ */
+
+
+  .pushBootStrap {
+    margin-left: auto; /* Pushes the element to the right in a flex container */
+  }
+  
