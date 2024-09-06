@@ -47,9 +47,9 @@ public class SpringSecurity{
                 .authorizeRequests()    // Enable request authorization
                 .requestMatchers("/register/**").permitAll()// Allow all requests to /register/**
                 .requestMatchers("/authenticate/**").permitAll() /// Allow all requests to /index/**
-                .requestMatchers("/addresses/**").permitAll()
-                .requestMatchers("/customers/**").permitAll()
-                .requestMatchers("/preferences/**").permitAll()
+//                .requestMatchers("/addresses/**").permitAll()
+//                .requestMatchers("/customers/**").permitAll()
+//                .requestMatchers("/preferences/**").permitAll()
                 .requestMatchers("/users").hasAuthority(Statics.PRIVILEGED_USER)
                 .anyRequest().authenticated(); // All other requests need to be authenticated
 
